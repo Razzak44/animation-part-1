@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: lavender;
+        }
+       .n{
+           height: 200px;
+           width: 200px;
+           background-color:rgb(224, 26, 224);
+           margin: 230px 130px;
+           position: relative;
+           
+          
+        } 
+
+       .n:hover{
+           z-index: 1;
+           box-shadow: 10px 10px 15px darkgray;
+        
+           
+           
+       }
+       .m{
+           height: 200px;
+           width: 200px;
+           background-color: aqua;
+           visibility: hidden;
+           transition: all 3s;
+
+
+        }
+  
+
+       
+       .o{
+           height: 200px;
+           width: 200px;
+           background-color:red;
+           position: absolute;
+           top: 0px;
+           visibility: hidden;
+           transition: all 4s;
+
+        }
+        .n:hover .o{
+            z-index: -1;
+            visibility: visible;
+            transform:translateY(200px);
+        
+            background-image: radial-gradient(red 70%,blue);
+        }
+        .n:hover .m{
+            transform:translateY(-278px);
+            background-image: repeating-linear-gradient(indigo,darkblue,orange,pink);
+         
+            z-index: -1;
+            visibility: visible;
+            
+            background-color: indianred;
+        }
+        .p{
+            height: 200px;
+           width: 200px;
+           background-image: linear-gradient(indigo,green,red);
+           position: absolute;
+           top: 0px;
+           visibility: hidden;
+           transition: all 5s;
+          
+
+        }
+        .n:hover .p{
+            visibility:visible;
+          
+            transform: translateX(200px);
+            z-index: -1;
+
+        }
+        .y{
+            height: 200px;
+           width: 200px;
+           background-image: linear-gradient(rgb(94, 247, 74),green,red);
+           position: absolute;
+           top: 0px;
+           visibility: hidden;
+           transition: all 5s;
+          
+
+        }
+        .n:hover .y{
+            height: 200px;
+            width: 150px;
+            z-index: -1;
+            visibility: visible;
+            transform: translateX(-150px);
+
+        }
+
+        .tas{
+            text-align: center;
+            position: relative;
+            top: 50px;
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px red;
+        }
+
+        
+    
+        
+       
+    </style>
+</head>
+<body>
+   <div class="n">
+       <p class="tas"> আমাকে টাচ করুন</p>
+       <div class="m"><p class="tas">১. এখন কি ভাবছেন</p></div>
+       <div class="o"><p class="tas">২. এটা কি ভাবে সম্ভাব</p></div>
+       <div class="p"><p class="tas">৩. সবই সম্ভাব</p></div>
+       <div class="y"><p class="tas">৪. ধন্যবাদ সবাইকে </p></div>
+      
+   </div>
+
+</body>
+</html>
